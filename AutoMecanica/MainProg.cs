@@ -16,13 +16,54 @@ namespace AutoMecanica
         public MainProg()
         {
             InitializeComponent();
+            customizeDesing();
 
             // UserControl Defaul Dashboard
             UC_Dashboard uC_Dashboad = new UC_Dashboard();
             addUserControl(uC_Dashboad);
 
         }
+        private void customizeDesing()
+        {
+            panelClientesSubMenu.Visible = false;
+            panelEstoqueSubMenu.Visible = false;
+            panelFinanceiroSubMenu.Visible = false;
+            panelServicosSubMenu.Visible = false;
+            panelVeiculosSubMenu.Visible = false;
+        }
+        private void hideSubMenu()
+        {
+            if (panelClientesSubMenu.Visible == true)
+            {
+                panelClientesSubMenu.Visible = false;
+            }
+            if (panelEstoqueSubMenu.Visible == true)
+            {
+                panelEstoqueSubMenu.Visible = false;
+            }
+            if (panelFinanceiroSubMenu.Visible == true)
+            {
+                panelFinanceiroSubMenu.Visible = false;
+            }
+            if (panelServicosSubMenu.Visible == true)
+            {
+                panelServicosSubMenu.Visible = false;
+            }
+            if (panelVeiculosSubMenu.Visible == true)
+            {
+                panelVeiculosSubMenu.Visible = false;
+            }
 
+        }
+        private void showSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else subMenu.Visible = false;
+        }
         private void MainProg_Load(object sender, EventArgs e)
         {
 
@@ -34,30 +75,144 @@ namespace AutoMecanica
             uc.BringToFront();
             panelContainer.Controls.Add(uc);
         }
-
+        #region ClientSubMenu
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            showSubMenu(panelClientesSubMenu);
+
+            /*testando menu
             UC_Users uC_Users = new UC_Users();
             addUserControl(uC_Users);
+            */
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
             UC_Dashboard uC_Dashboad = new UC_Dashboard();
             addUserControl(uC_Dashboad);
-        }
 
-        private void addUserControlVbar(UserControl uc)
-        {
-            panelContainer.Controls.Clear();
-            uc.Dock = DockStyle.None;
-            uc.BringToFront();
-            panelContainer.Controls.Add(uc);
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
         }
+        #endregion
         private void btnEstoque_Click(object sender, EventArgs e)
         {
-            UC_Estoque uC_Estoque = new UC_Estoque();
-            addUserControlVbar(uC_Estoque);
+            showSubMenu(panelEstoqueSubMenu);
+            /*Testando Menu
+            UC_Stock stock = new UC_Stock();
+            addUserControl(stock);
+            */
+        }
+
+        private void btnHome_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button7_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button9_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button8_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button11_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void guna2Button10_Click(object sender, EventArgs e)
+        {
+            //..
+            //Meus Codigos
+            //
+            hideSubMenu();
+        }
+
+        private void btnServices_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelServicosSubMenu);
+        }
+
+        private void btnFinance_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelFinanceiroSubMenu);
+        }
+
+        private void btnVeiculos_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelVeiculosSubMenu);
         }
     }
 }

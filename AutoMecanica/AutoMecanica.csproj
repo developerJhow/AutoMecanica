@@ -112,6 +112,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoginDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LoginDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainProg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,11 +136,29 @@
     <Compile Include="UserControls\UC_Dashboard.Designer.cs">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_Estoque.cs">
+    <Compile Include="UserControls\UC_StockEdit.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_Estoque.Designer.cs">
-      <DependentUpon>UC_Estoque.cs</DependentUpon>
+    <Compile Include="UserControls\UC_StockEdit.Designer.cs">
+      <DependentUpon>UC_StockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Stock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Stock.Designer.cs">
+      <DependentUpon>UC_Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_StockAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_StockAdd.Designer.cs">
+      <DependentUpon>UC_StockAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_StockTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_StockTable.Designer.cs">
+      <DependentUpon>UC_StockTable.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_Users.cs">
       <SubType>UserControl</SubType>
@@ -143,12 +166,53 @@
     <Compile Include="UserControls\UC_Users.Designer.cs">
       <DependentUpon>UC_Users.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_UsersDados.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_UsersDados.Designer.cs">
+      <DependentUpon>UC_UsersDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_UsersEnd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_UsersEnd.Designer.cs">
+      <DependentUpon>UC_UsersEnd.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainProg.resx">
       <DependentUpon>MainProg.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_StockEdit.resx">
+      <DependentUpon>UC_StockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Stock.resx">
+      <DependentUpon>UC_Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_StockAdd.resx">
+      <DependentUpon>UC_StockAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_StockTable.resx">
+      <DependentUpon>UC_StockTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_UsersDados.resx">
+      <DependentUpon>UC_UsersDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_UsersEnd.resx">
+      <DependentUpon>UC_UsersEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="LoginDBDataSet1.xsc">
+      <DependentUpon>LoginDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LoginDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoginDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoginDBDataSet1.xss">
+      <DependentUpon>LoginDBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="ProgrammingClass.dbml.layout">
       <DependentUpon>ProgrammingClass.dbml</DependentUpon>
     </None>
@@ -164,9 +228,6 @@
     </Compile>
     <EmbeddedResource Include="UserControls\UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Estoque.resx">
-      <DependentUpon>UC_Estoque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Users.resx">
       <DependentUpon>UC_Users.cs</DependentUpon>
@@ -315,6 +376,54 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_math_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_math_32px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_32px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_math_32px_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_32px_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_32px_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combo_chart_32px_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_32px_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_32px_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_32px_white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

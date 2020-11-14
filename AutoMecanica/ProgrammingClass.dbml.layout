@@ -1,11 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="ProgrammingClass">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 8.5" name="ProgrammingClass">
   <DataContextMoniker Name="/ProgrammingClassDataContext" />
   <nestedChildShapes>
-    <classShape Id="31e2292d-4f05-4cc3-bfc5-cf92ce01625b" absoluteBounds="6, 2.375, 2, 1.9631982421875">
+    <classShape Id="31e2292d-4f05-4cc3-bfc5-cf92ce01625b" absoluteBounds="3.75, 1.5, 2, 1.9631982421875">
       <DataClassMoniker Name="/ProgrammingClassDataContext/Table_OSev" />
       <nestedChildShapes>
-        <elementListCompartment Id="8311bd7e-e3cd-4be0-9f3f-d25ff70f2a7e" absoluteBounds="6.015, 2.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="8311bd7e-e3cd-4be0-9f3f-d25ff70f2a7e" absoluteBounds="3.7649999999999997, 1.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a608bacc-3ac5-4df3-9c3a-00777b904f1b" absoluteBounds="9.25, 1.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/ProgrammingClassDataContext/tblUserRegistration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c031c70c-acb3-4972-929f-91a26371d36b" absoluteBounds="9.265, 1.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b9177018-f20b-4c4b-979d-b6ed1e739bcb" absoluteBounds="6.75, 1.5, 2, 5.2323225911458326">
+      <DataClassMoniker Name="/ProgrammingClassDataContext/TableEstoque" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c86c886-cc44-493f-a856-65de13024b49" absoluteBounds="6.765, 1.96, 1.9700000000000002, 4.672322591145833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

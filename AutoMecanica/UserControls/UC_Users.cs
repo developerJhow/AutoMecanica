@@ -15,7 +15,11 @@ namespace AutoMecanica.UserControls
         public UC_Users()
         {
             InitializeComponent();
-            addUserPanel(panelDados);
+            UC_UsersEnd usersEnd = new UC_UsersEnd();
+            addUserControl(usersEnd);
+            //Default UC 
+            UC_UsersDados usersDados = new UC_UsersDados();
+            addUserControl(usersDados);
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -30,37 +34,23 @@ namespace AutoMecanica.UserControls
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            addUserPanel(panelEnd);
-            panelDados.Enabled = false;
-            panelDados.Visible = false;
-            panelEnd.Enabled = true;
-            panelEnd.Visible = true;            
+            UC_UsersEnd uC = new UC_UsersEnd();
+            addUserControl(uC);
         }
 
-        private void gunaTextBox10_TextChanged(object sender, EventArgs e)
-        {
-            if (System.Text.RegularExpressions.Regex.IsMatch(gunaTextBox10.Text, "[^0-9]"))
-            {
-                MessageBox.Show("Por favor digite apenas numeros.");
-                gunaTextBox10.Text = gunaTextBox10.Text.Remove(gunaTextBox10.Text.Length - 1);
-            }
-        }
 
-        private void addUserPanel(Panel panel)
+        private void addUserControl(UserControl uc)
         {
             panel1.Controls.Clear();
-            panel.Dock = DockStyle.Fill;
-            panel.BringToFront();
-            panel1.Controls.Add(panel);
+            uc.Dock = DockStyle.Fill;
+            uc.BringToFront();
+            panel1.Controls.Add(uc);
         }
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            addUserPanel(panelDados);
-            panelDados.Visible = true;
-            panelDados.Enabled = true;
-            panelEnd.Visible = false;
-            panelEnd.Enabled = false;
-            //panelDados.Show();
+            UC_UsersDados usersDados = new UC_UsersDados();
+            addUserControl(usersDados);          
+            
             
         }
 
@@ -69,23 +59,5 @@ namespace AutoMecanica.UserControls
 
         }
 
-        private void guna2ComboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            if (guna2ComboBox1.SelectedIndex == 1)
-            {
-                lblNomeClient.Text = "Nome completo do Responsavel";
-                lblCnpj.Visible = true;
-                txtCnpj.Visible = true;
-                lblNf.Visible = true;
-                txtNf.Visible = true;
-            }
-            if (guna2ComboBox1.SelectedIndex == 0)
-            {
-                lblCnpj.Visible = false;
-                txtCnpj.Visible = false;
-                lblNf.Visible = false;
-                txtNf.Visible = false;
-            }
-        }
     }
 }

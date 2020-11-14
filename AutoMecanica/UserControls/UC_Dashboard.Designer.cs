@@ -29,19 +29,32 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.lblSev = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.lblBaixaEstoque = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.lblServProntos = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clienteNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataEntradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tempoServicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipoServiçoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.funcionarioNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableOSevBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.loginDBDataOrdemServicos = new AutoMecanica.LoginDBDataOrdemServicos();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,19 +68,13 @@
             this.guna2Separator6 = new Guna.UI2.WinForms.Guna2Separator();
             this.label6 = new System.Windows.Forms.Label();
             this.tableOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableOSevBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableOSevBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.loginDBDataOS = new AutoMecanica.LoginDBDataOS();
             this.loginDBDataOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.table_OSTableAdapter = new AutoMecanica.LoginDBDataOSTableAdapters.Table_OSTableAdapter();
-            this.loginDBDataOrdemServicos = new AutoMecanica.LoginDBDataOrdemServicos();
+            this.loginDBDataOS = new AutoMecanica.LoginDBDataOS();
+            this.tableOSevBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.loginDBDataOrdemServicosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tableOSevBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.table_OSTableAdapter = new AutoMecanica.LoginDBDataOSTableAdapters.Table_OSTableAdapter();
             this.table_OSevTableAdapter = new AutoMecanica.LoginDBDataOrdemServicosTableAdapters.Table_OSevTableAdapter();
-            this.tableOSevBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lblSev = new System.Windows.Forms.Label();
-            this.lblBaixaEstoque = new System.Windows.Forms.Label();
-            this.lblServProntos = new System.Windows.Forms.Label();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.guna2ShadowPanel2.SuspendLayout();
@@ -75,19 +82,19 @@
             this.guna2ShadowPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOrdemServicos)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableOSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOSBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOrdemServicos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOrdemServicosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
@@ -104,6 +111,15 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(200, 100);
             this.guna2ShadowPanel1.TabIndex = 0;
+            // 
+            // lblSev
+            // 
+            this.lblSev.AutoSize = true;
+            this.lblSev.Location = new System.Drawing.Point(155, 13);
+            this.lblSev.Name = "lblSev";
+            this.lblSev.Size = new System.Drawing.Size(24, 18);
+            this.lblSev.TabIndex = 2;
+            this.lblSev.Text = "00";
             // 
             // label1
             // 
@@ -141,6 +157,16 @@
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(200, 100);
             this.guna2ShadowPanel2.TabIndex = 2;
             // 
+            // lblBaixaEstoque
+            // 
+            this.lblBaixaEstoque.AutoSize = true;
+            this.lblBaixaEstoque.Location = new System.Drawing.Point(152, 16);
+            this.lblBaixaEstoque.Name = "lblBaixaEstoque";
+            this.lblBaixaEstoque.Size = new System.Drawing.Size(24, 18);
+            this.lblBaixaEstoque.TabIndex = 3;
+            this.lblBaixaEstoque.Text = "00";
+            this.lblBaixaEstoque.Click += new System.EventHandler(this.lblBaixaEstoque_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -176,6 +202,15 @@
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(200, 100);
             this.guna2ShadowPanel3.TabIndex = 2;
             // 
+            // lblServProntos
+            // 
+            this.lblServProntos.AutoSize = true;
+            this.lblServProntos.Location = new System.Drawing.Point(158, 12);
+            this.lblServProntos.Name = "lblServProntos";
+            this.lblServProntos.Size = new System.Drawing.Size(24, 18);
+            this.lblServProntos.TabIndex = 3;
+            this.lblServProntos.Text = "00";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -199,6 +234,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.dataGrid);
             this.panel1.Controls.Add(this.guna2Separator1);
             this.panel1.Controls.Add(this.label4);
@@ -207,9 +243,167 @@
             this.panel1.Size = new System.Drawing.Size(958, 209);
             this.panel1.TabIndex = 3;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Black;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnSearch.DefaultText = "";
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnSearch.DisabledState.Parent = this.btnSearch;
+            this.btnSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.btnSearch.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnSearch.FocusedState.FillColor = System.Drawing.Color.Silver;
+            this.btnSearch.FocusedState.ForeColor = System.Drawing.Color.Gray;
+            this.btnSearch.FocusedState.Parent = this.btnSearch;
+            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnSearch.HoverState.FillColor = System.Drawing.Color.Silver;
+            this.btnSearch.HoverState.ForeColor = System.Drawing.Color.Silver;
+            this.btnSearch.HoverState.Parent = this.btnSearch;
+            this.btnSearch.IconRight = global::AutoMecanica.Properties.Resources.search_64px;
+            this.btnSearch.Location = new System.Drawing.Point(761, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.PasswordChar = '\0';
+            this.btnSearch.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSearch.PlaceholderText = "Pesquisar por Nome";
+            this.btnSearch.SelectedText = "";
+            this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
+            this.btnSearch.Size = new System.Drawing.Size(171, 24);
+            this.btnSearch.TabIndex = 6;
+            this.btnSearch.TextChanged += new System.EventHandler(this.btnSearch_TextChanged);
+            this.btnSearch.Enter += new System.EventHandler(this.btnSearch_Enter);
+            // 
+            // dataGrid
+            // 
+            this.dataGrid.AllowUserToAddRows = false;
+            this.dataGrid.AllowUserToDeleteRows = false;
+            this.dataGrid.AllowUserToOrderColumns = true;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGrid.AutoGenerateColumns = false;
+            this.dataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGrid.BackgroundColor = System.Drawing.Color.White;
+            this.dataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGrid.ColumnHeadersHeight = 20;
+            this.dataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.clienteNameDataGridViewTextBoxColumn,
+            this.dataEntradaDataGridViewTextBoxColumn,
+            this.tempoServicoDataGridViewTextBoxColumn,
+            this.tipoServiçoDataGridViewTextBoxColumn,
+            this.funcionarioNameDataGridViewTextBoxColumn});
+            this.dataGrid.DataSource = this.tableOSevBindingSource2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(213)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGrid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGrid.EnableHeadersVisualStyles = false;
+            this.dataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGrid.Location = new System.Drawing.Point(5, 37);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.ReadOnly = true;
+            this.dataGrid.RowHeadersVisible = false;
+            this.dataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGrid.Size = new System.Drawing.Size(939, 169);
+            this.dataGrid.TabIndex = 2;
+            this.dataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
+            this.dataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataGrid.ThemeStyle.HeaderStyle.Height = 20;
+            this.dataGrid.ThemeStyle.ReadOnly = true;
+            this.dataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(213)))));
+            this.dataGrid.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.FillWeight = 30F;
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // clienteNameDataGridViewTextBoxColumn
+            // 
+            this.clienteNameDataGridViewTextBoxColumn.DataPropertyName = "ClienteName";
+            this.clienteNameDataGridViewTextBoxColumn.HeaderText = "ClienteName";
+            this.clienteNameDataGridViewTextBoxColumn.Name = "clienteNameDataGridViewTextBoxColumn";
+            this.clienteNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataEntradaDataGridViewTextBoxColumn
+            // 
+            this.dataEntradaDataGridViewTextBoxColumn.DataPropertyName = "DataEntrada";
+            this.dataEntradaDataGridViewTextBoxColumn.HeaderText = "DataEntrada";
+            this.dataEntradaDataGridViewTextBoxColumn.Name = "dataEntradaDataGridViewTextBoxColumn";
+            this.dataEntradaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tempoServicoDataGridViewTextBoxColumn
+            // 
+            this.tempoServicoDataGridViewTextBoxColumn.DataPropertyName = "TempoServico";
+            this.tempoServicoDataGridViewTextBoxColumn.HeaderText = "TempoServico";
+            this.tempoServicoDataGridViewTextBoxColumn.Name = "tempoServicoDataGridViewTextBoxColumn";
+            this.tempoServicoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tipoServiçoDataGridViewTextBoxColumn
+            // 
+            this.tipoServiçoDataGridViewTextBoxColumn.DataPropertyName = "TipoServiço";
+            this.tipoServiçoDataGridViewTextBoxColumn.HeaderText = "TipoServiço";
+            this.tipoServiçoDataGridViewTextBoxColumn.Name = "tipoServiçoDataGridViewTextBoxColumn";
+            this.tipoServiçoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // funcionarioNameDataGridViewTextBoxColumn
+            // 
+            this.funcionarioNameDataGridViewTextBoxColumn.DataPropertyName = "FuncionarioName";
+            this.funcionarioNameDataGridViewTextBoxColumn.HeaderText = "FuncionarioName";
+            this.funcionarioNameDataGridViewTextBoxColumn.Name = "funcionarioNameDataGridViewTextBoxColumn";
+            this.funcionarioNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tableOSevBindingSource2
+            // 
+            this.tableOSevBindingSource2.DataMember = "Table_OSev";
+            this.tableOSevBindingSource2.DataSource = this.loginDBDataOrdemServicos;
+            // 
+            // loginDBDataOrdemServicos
+            // 
+            this.loginDBDataOrdemServicos.DataSetName = "LoginDBDataOrdemServicos";
+            this.loginDBDataOrdemServicos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // guna2Separator1
             // 
-            this.guna2Separator1.Location = new System.Drawing.Point(3, 21);
+            this.guna2Separator1.Location = new System.Drawing.Point(3, 25);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(941, 10);
             this.guna2Separator1.TabIndex = 1;
@@ -332,133 +526,38 @@
             this.tableOSBindingSource.DataMember = "Table_OS";
             this.tableOSBindingSource.DataSource = this.loginDBDataOSBindingSource;
             // 
-            // tableOSevBindingSource
+            // loginDBDataOSBindingSource
             // 
-            this.tableOSevBindingSource.DataMember = "Table_OSev";
-            this.tableOSevBindingSource.DataSource = this.loginDBDataOrdemServicosBindingSource;
-            // 
-            // tableOSevBindingSource1
-            // 
-            this.tableOSevBindingSource1.DataMember = "Table_OSev";
-            this.tableOSevBindingSource1.DataSource = this.loginDBDataOrdemServicosBindingSource;
+            this.loginDBDataOSBindingSource.DataSource = this.loginDBDataOS;
+            this.loginDBDataOSBindingSource.Position = 0;
             // 
             // loginDBDataOS
             // 
             this.loginDBDataOS.DataSetName = "LoginDBDataOS";
             this.loginDBDataOS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // loginDBDataOSBindingSource
+            // tableOSevBindingSource
             // 
-            this.loginDBDataOSBindingSource.DataSource = this.loginDBDataOS;
-            this.loginDBDataOSBindingSource.Position = 0;
-            // 
-            // table_OSTableAdapter
-            // 
-            this.table_OSTableAdapter.ClearBeforeFill = true;
-            // 
-            // loginDBDataOrdemServicos
-            // 
-            this.loginDBDataOrdemServicos.DataSetName = "LoginDBDataOrdemServicos";
-            this.loginDBDataOrdemServicos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.tableOSevBindingSource.DataMember = "Table_OSev";
+            this.tableOSevBindingSource.DataSource = this.loginDBDataOrdemServicosBindingSource;
             // 
             // loginDBDataOrdemServicosBindingSource
             // 
             this.loginDBDataOrdemServicosBindingSource.DataSource = this.loginDBDataOrdemServicos;
             this.loginDBDataOrdemServicosBindingSource.Position = 0;
             // 
+            // tableOSevBindingSource1
+            // 
+            this.tableOSevBindingSource1.DataMember = "Table_OSev";
+            this.tableOSevBindingSource1.DataSource = this.loginDBDataOrdemServicosBindingSource;
+            // 
+            // table_OSTableAdapter
+            // 
+            this.table_OSTableAdapter.ClearBeforeFill = true;
+            // 
             // table_OSevTableAdapter
             // 
             this.table_OSevTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableOSevBindingSource2
-            // 
-            this.tableOSevBindingSource2.DataMember = "Table_OSev";
-            this.tableOSevBindingSource2.DataSource = this.loginDBDataOrdemServicos;
-            // 
-            // dataGrid
-            // 
-            this.dataGrid.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGrid.BackgroundColor = System.Drawing.Color.White;
-            this.dataGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(213)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGrid.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGrid.EnableHeadersVisualStyles = false;
-            this.dataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGrid.Location = new System.Drawing.Point(5, 37);
-            this.dataGrid.Name = "dataGrid";
-            this.dataGrid.RowHeadersVisible = false;
-            this.dataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGrid.Size = new System.Drawing.Size(939, 169);
-            this.dataGrid.TabIndex = 2;
-            this.dataGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dataGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dataGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dataGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGrid.ThemeStyle.HeaderStyle.Height = 4;
-            this.dataGrid.ThemeStyle.ReadOnly = false;
-            this.dataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(213)))));
-            this.dataGrid.ThemeStyle.RowsStyle.Height = 22;
-            this.dataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // lblSev
-            // 
-            this.lblSev.AutoSize = true;
-            this.lblSev.Location = new System.Drawing.Point(145, 11);
-            this.lblSev.Name = "lblSev";
-            this.lblSev.Size = new System.Drawing.Size(24, 18);
-            this.lblSev.TabIndex = 2;
-            this.lblSev.Text = "00";
-            // 
-            // lblBaixaEstoque
-            // 
-            this.lblBaixaEstoque.AutoSize = true;
-            this.lblBaixaEstoque.Location = new System.Drawing.Point(135, 11);
-            this.lblBaixaEstoque.Name = "lblBaixaEstoque";
-            this.lblBaixaEstoque.Size = new System.Drawing.Size(24, 18);
-            this.lblBaixaEstoque.TabIndex = 3;
-            this.lblBaixaEstoque.Text = "00";
-            // 
-            // lblServProntos
-            // 
-            this.lblServProntos.AutoSize = true;
-            this.lblServProntos.Location = new System.Drawing.Point(149, 11);
-            this.lblServProntos.Name = "lblServProntos";
-            this.lblServProntos.Size = new System.Drawing.Size(24, 18);
-            this.lblServProntos.TabIndex = 3;
-            this.lblServProntos.Text = "00";
             // 
             // UC_Dashboard
             // 
@@ -474,6 +573,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(199)))), ((int)(((byte)(213)))));
             this.Name = "UC_Dashboard";
             this.Size = new System.Drawing.Size(1045, 661);
+            this.Load += new System.EventHandler(this.UC_Dashboard_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -485,6 +585,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOrdemServicos)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -492,14 +595,11 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableOSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOSBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOrdemServicos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginDBDataOrdemServicosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableOSevBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -542,5 +642,12 @@
         private System.Windows.Forms.Label lblSev;
         private System.Windows.Forms.Label lblBaixaEstoque;
         private System.Windows.Forms.Label lblServProntos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn clienteNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataEntradaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tempoServicoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipoServiçoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn funcionarioNameDataGridViewTextBoxColumn;
+        private Guna.UI2.WinForms.Guna2TextBox btnSearch;
     }
 }

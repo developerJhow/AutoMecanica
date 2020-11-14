@@ -63,6 +63,16 @@ namespace AutoMecanica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_32px {
+            get {
+                object obj = ResourceManager.GetObject("add_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bordalateral {
             get {
                 object obj = ResourceManager.GetObject("bordalateral", resourceCulture);
@@ -93,6 +103,26 @@ namespace AutoMecanica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chart_32px_blue {
+            get {
+                object obj = ResourceManager.GetObject("chart_32px_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap combo_chart_32px_white {
+            get {
+                object obj = ResourceManager.GetObject("combo_chart_32px_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap doownimg {
             get {
                 object obj = ResourceManager.GetObject("doownimg", resourceCulture);
@@ -113,9 +143,59 @@ namespace AutoMecanica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap edit_32px {
+            get {
+                object obj = ResourceManager.GetObject("edit_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_32px_blue {
+            get {
+                object obj = ResourceManager.GetObject("edit_32px_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_32px1 {
+            get {
+                object obj = ResourceManager.GetObject("edit_32px1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap envelope_64px {
             get {
                 object obj = ResourceManager.GetObject("envelope_64px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit_32px_blue {
+            get {
+                object obj = ResourceManager.GetObject("exit_32px_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit_32px_white {
+            get {
+                object obj = ResourceManager.GetObject("exit_32px_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,6 +293,36 @@ namespace AutoMecanica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plus_math_32px {
+            get {
+                object obj = ResourceManager.GetObject("plus_math_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_math_32px_blue {
+            get {
+                object obj = ResourceManager.GetObject("plus_math_32px_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_math_32px_white {
+            get {
+                object obj = ResourceManager.GetObject("plus_math_32px_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap save_32px {
             get {
                 object obj = ResourceManager.GetObject("save_32px", resourceCulture);
@@ -226,6 +336,26 @@ namespace AutoMecanica.Properties {
         internal static System.Drawing.Bitmap save_32px_white {
             get {
                 object obj = ResourceManager.GetObject("save_32px_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_32px_blue {
+            get {
+                object obj = ResourceManager.GetObject("search_32px_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap search_32px_white {
+            get {
+                object obj = ResourceManager.GetObject("search_32px_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +413,16 @@ namespace AutoMecanica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap trash_32px {
+            get {
+                object obj = ResourceManager.GetObject("trash_32px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap up_64px {
             get {
                 object obj = ResourceManager.GetObject("up_64px", resourceCulture);
@@ -316,6 +456,16 @@ namespace AutoMecanica.Properties {
         internal static System.Drawing.Bitmap user_96px {
             get {
                 object obj = ResourceManager.GetObject("user_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_32px {
+            get {
+                object obj = ResourceManager.GetObject("view_32px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

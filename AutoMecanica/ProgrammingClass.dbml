@@ -10,4 +10,38 @@
       <Column Name="FuncionarioName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.tblUserRegistration" Member="tblUserRegistration">
+    <Type Name="tblUserRegistration">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TableEstoque" Member="TableEstoque">
+    <Type Name="TableEstoque">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CodBarras" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ProdName" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Categoria" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Unidade" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fabricante" Type="System.String" DbType="NChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Vencimento" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Endereco" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Setor" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Telefone" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Atual" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Minimo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Maximo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PreCom" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PreVen" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Lucro" Type="System.Decimal" DbType="Decimal(10,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CodSubs" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="DataCotacao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ValCotacao" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="QuantCotacao" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fornecedor" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="Observação" Type="System.String" DbType="NChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
 </Database>
