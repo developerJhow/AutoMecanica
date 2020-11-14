@@ -39,6 +39,9 @@ namespace AutoMecanica
     partial void InsertTableEstoque(TableEstoque instance);
     partial void UpdateTableEstoque(TableEstoque instance);
     partial void DeleteTableEstoque(TableEstoque instance);
+    partial void InsertTbUsers(TbUsers instance);
+    partial void UpdateTbUsers(TbUsers instance);
+    partial void DeleteTbUsers(TbUsers instance);
     #endregion
 		
 		public ProgrammingClassDataContext() : 
@@ -92,6 +95,14 @@ namespace AutoMecanica
 			get
 			{
 				return this.GetTable<TableEstoque>();
+			}
+		}
+		
+		public System.Data.Linq.Table<TbUsers> TbUsers
+		{
+			get
+			{
+				return this.GetTable<TbUsers>();
 			}
 		}
 	}
@@ -953,6 +964,548 @@ namespace AutoMecanica
 					this._Observação = value;
 					this.SendPropertyChanged("Observação");
 					this.OnObservaçãoChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.TbUsers")]
+	public partial class TbUsers : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _UserId;
+		
+		private string _UserName;
+		
+		private string _UserCpf;
+		
+		private string _UserPessoa;
+		
+		private string _UserSituacao;
+		
+		private System.Nullable<System.DateTime> _UserNasc;
+		
+		private string _UserRg;
+		
+		private string _UserIcms;
+		
+		private string _UserTel;
+		
+		private string _UserEmail;
+		
+		private string _UserEst;
+		
+		private string _UserCid;
+		
+		private string _UserBairro;
+		
+		private string _UserRua;
+		
+		private string _UserNumero;
+		
+		private string _UserCompl;
+		
+		private string _InsEstadual;
+		
+		private string _Cnpj;
+		
+		private string _NomeFantasia;
+		
+		private string _Observação;
+		
+		private string _UserCep;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnUserIdChanging(int value);
+    partial void OnUserIdChanged();
+    partial void OnUserNameChanging(string value);
+    partial void OnUserNameChanged();
+    partial void OnUserCpfChanging(string value);
+    partial void OnUserCpfChanged();
+    partial void OnUserPessoaChanging(string value);
+    partial void OnUserPessoaChanged();
+    partial void OnUserSituacaoChanging(string value);
+    partial void OnUserSituacaoChanged();
+    partial void OnUserNascChanging(System.Nullable<System.DateTime> value);
+    partial void OnUserNascChanged();
+    partial void OnUserRgChanging(string value);
+    partial void OnUserRgChanged();
+    partial void OnUserIcmsChanging(string value);
+    partial void OnUserIcmsChanged();
+    partial void OnUserTelChanging(string value);
+    partial void OnUserTelChanged();
+    partial void OnUserEmailChanging(string value);
+    partial void OnUserEmailChanged();
+    partial void OnUserEstChanging(string value);
+    partial void OnUserEstChanged();
+    partial void OnUserCidChanging(string value);
+    partial void OnUserCidChanged();
+    partial void OnUserBairroChanging(string value);
+    partial void OnUserBairroChanged();
+    partial void OnUserRuaChanging(string value);
+    partial void OnUserRuaChanged();
+    partial void OnUserNumeroChanging(string value);
+    partial void OnUserNumeroChanged();
+    partial void OnUserComplChanging(string value);
+    partial void OnUserComplChanged();
+    partial void OnInsEstadualChanging(string value);
+    partial void OnInsEstadualChanged();
+    partial void OnCnpjChanging(string value);
+    partial void OnCnpjChanged();
+    partial void OnNomeFantasiaChanging(string value);
+    partial void OnNomeFantasiaChanged();
+    partial void OnObservaçãoChanging(string value);
+    partial void OnObservaçãoChanged();
+    partial void OnUserCepChanging(string value);
+    partial void OnUserCepChanged();
+    #endregion
+		
+		public TbUsers()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int UserId
+		{
+			get
+			{
+				return this._UserId;
+			}
+			set
+			{
+				if ((this._UserId != value))
+				{
+					this.OnUserIdChanging(value);
+					this.SendPropertyChanging();
+					this._UserId = value;
+					this.SendPropertyChanged("UserId");
+					this.OnUserIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserName", DbType="NChar(100) NOT NULL", CanBeNull=false)]
+		public string UserName
+		{
+			get
+			{
+				return this._UserName;
+			}
+			set
+			{
+				if ((this._UserName != value))
+				{
+					this.OnUserNameChanging(value);
+					this.SendPropertyChanging();
+					this._UserName = value;
+					this.SendPropertyChanged("UserName");
+					this.OnUserNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserCpf", DbType="NChar(50) NOT NULL", CanBeNull=false)]
+		public string UserCpf
+		{
+			get
+			{
+				return this._UserCpf;
+			}
+			set
+			{
+				if ((this._UserCpf != value))
+				{
+					this.OnUserCpfChanging(value);
+					this.SendPropertyChanging();
+					this._UserCpf = value;
+					this.SendPropertyChanged("UserCpf");
+					this.OnUserCpfChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserPessoa", DbType="NChar(50)")]
+		public string UserPessoa
+		{
+			get
+			{
+				return this._UserPessoa;
+			}
+			set
+			{
+				if ((this._UserPessoa != value))
+				{
+					this.OnUserPessoaChanging(value);
+					this.SendPropertyChanging();
+					this._UserPessoa = value;
+					this.SendPropertyChanged("UserPessoa");
+					this.OnUserPessoaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserSituacao", DbType="NChar(50)")]
+		public string UserSituacao
+		{
+			get
+			{
+				return this._UserSituacao;
+			}
+			set
+			{
+				if ((this._UserSituacao != value))
+				{
+					this.OnUserSituacaoChanging(value);
+					this.SendPropertyChanging();
+					this._UserSituacao = value;
+					this.SendPropertyChanged("UserSituacao");
+					this.OnUserSituacaoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserNasc", DbType="Date")]
+		public System.Nullable<System.DateTime> UserNasc
+		{
+			get
+			{
+				return this._UserNasc;
+			}
+			set
+			{
+				if ((this._UserNasc != value))
+				{
+					this.OnUserNascChanging(value);
+					this.SendPropertyChanging();
+					this._UserNasc = value;
+					this.SendPropertyChanged("UserNasc");
+					this.OnUserNascChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserRg", DbType="NChar(50)")]
+		public string UserRg
+		{
+			get
+			{
+				return this._UserRg;
+			}
+			set
+			{
+				if ((this._UserRg != value))
+				{
+					this.OnUserRgChanging(value);
+					this.SendPropertyChanging();
+					this._UserRg = value;
+					this.SendPropertyChanged("UserRg");
+					this.OnUserRgChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserIcms", DbType="NChar(50)")]
+		public string UserIcms
+		{
+			get
+			{
+				return this._UserIcms;
+			}
+			set
+			{
+				if ((this._UserIcms != value))
+				{
+					this.OnUserIcmsChanging(value);
+					this.SendPropertyChanging();
+					this._UserIcms = value;
+					this.SendPropertyChanged("UserIcms");
+					this.OnUserIcmsChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserTel", DbType="NChar(50)")]
+		public string UserTel
+		{
+			get
+			{
+				return this._UserTel;
+			}
+			set
+			{
+				if ((this._UserTel != value))
+				{
+					this.OnUserTelChanging(value);
+					this.SendPropertyChanging();
+					this._UserTel = value;
+					this.SendPropertyChanged("UserTel");
+					this.OnUserTelChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserEmail", DbType="NChar(50)")]
+		public string UserEmail
+		{
+			get
+			{
+				return this._UserEmail;
+			}
+			set
+			{
+				if ((this._UserEmail != value))
+				{
+					this.OnUserEmailChanging(value);
+					this.SendPropertyChanging();
+					this._UserEmail = value;
+					this.SendPropertyChanged("UserEmail");
+					this.OnUserEmailChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserEst", DbType="NChar(100)")]
+		public string UserEst
+		{
+			get
+			{
+				return this._UserEst;
+			}
+			set
+			{
+				if ((this._UserEst != value))
+				{
+					this.OnUserEstChanging(value);
+					this.SendPropertyChanging();
+					this._UserEst = value;
+					this.SendPropertyChanged("UserEst");
+					this.OnUserEstChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserCid", DbType="NChar(100)")]
+		public string UserCid
+		{
+			get
+			{
+				return this._UserCid;
+			}
+			set
+			{
+				if ((this._UserCid != value))
+				{
+					this.OnUserCidChanging(value);
+					this.SendPropertyChanging();
+					this._UserCid = value;
+					this.SendPropertyChanged("UserCid");
+					this.OnUserCidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserBairro", DbType="NChar(50)")]
+		public string UserBairro
+		{
+			get
+			{
+				return this._UserBairro;
+			}
+			set
+			{
+				if ((this._UserBairro != value))
+				{
+					this.OnUserBairroChanging(value);
+					this.SendPropertyChanging();
+					this._UserBairro = value;
+					this.SendPropertyChanged("UserBairro");
+					this.OnUserBairroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserRua", DbType="NChar(50)")]
+		public string UserRua
+		{
+			get
+			{
+				return this._UserRua;
+			}
+			set
+			{
+				if ((this._UserRua != value))
+				{
+					this.OnUserRuaChanging(value);
+					this.SendPropertyChanging();
+					this._UserRua = value;
+					this.SendPropertyChanged("UserRua");
+					this.OnUserRuaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserNumero", DbType="NChar(50)")]
+		public string UserNumero
+		{
+			get
+			{
+				return this._UserNumero;
+			}
+			set
+			{
+				if ((this._UserNumero != value))
+				{
+					this.OnUserNumeroChanging(value);
+					this.SendPropertyChanging();
+					this._UserNumero = value;
+					this.SendPropertyChanged("UserNumero");
+					this.OnUserNumeroChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserCompl", DbType="NChar(50)")]
+		public string UserCompl
+		{
+			get
+			{
+				return this._UserCompl;
+			}
+			set
+			{
+				if ((this._UserCompl != value))
+				{
+					this.OnUserComplChanging(value);
+					this.SendPropertyChanging();
+					this._UserCompl = value;
+					this.SendPropertyChanged("UserCompl");
+					this.OnUserComplChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_InsEstadual", DbType="NChar(50)")]
+		public string InsEstadual
+		{
+			get
+			{
+				return this._InsEstadual;
+			}
+			set
+			{
+				if ((this._InsEstadual != value))
+				{
+					this.OnInsEstadualChanging(value);
+					this.SendPropertyChanging();
+					this._InsEstadual = value;
+					this.SendPropertyChanged("InsEstadual");
+					this.OnInsEstadualChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cnpj", DbType="NChar(50)")]
+		public string Cnpj
+		{
+			get
+			{
+				return this._Cnpj;
+			}
+			set
+			{
+				if ((this._Cnpj != value))
+				{
+					this.OnCnpjChanging(value);
+					this.SendPropertyChanging();
+					this._Cnpj = value;
+					this.SendPropertyChanged("Cnpj");
+					this.OnCnpjChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NomeFantasia", DbType="NChar(150)")]
+		public string NomeFantasia
+		{
+			get
+			{
+				return this._NomeFantasia;
+			}
+			set
+			{
+				if ((this._NomeFantasia != value))
+				{
+					this.OnNomeFantasiaChanging(value);
+					this.SendPropertyChanging();
+					this._NomeFantasia = value;
+					this.SendPropertyChanged("NomeFantasia");
+					this.OnNomeFantasiaChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Observação", DbType="NChar(150)")]
+		public string Observação
+		{
+			get
+			{
+				return this._Observação;
+			}
+			set
+			{
+				if ((this._Observação != value))
+				{
+					this.OnObservaçãoChanging(value);
+					this.SendPropertyChanging();
+					this._Observação = value;
+					this.SendPropertyChanged("Observação");
+					this.OnObservaçãoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserCep", DbType="NChar(50)")]
+		public string UserCep
+		{
+			get
+			{
+				return this._UserCep;
+			}
+			set
+			{
+				if ((this._UserCep != value))
+				{
+					this.OnUserCepChanging(value);
+					this.SendPropertyChanging();
+					this._UserCep = value;
+					this.SendPropertyChanged("UserCep");
+					this.OnUserCepChanged();
 				}
 			}
 		}

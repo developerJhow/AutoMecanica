@@ -79,11 +79,6 @@ namespace AutoMecanica
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             showSubMenu(panelClientesSubMenu);
-
-            /*testando menu
-            UC_Users uC_Users = new UC_Users();
-            addUserControl(uC_Users);
-            */
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -114,9 +109,9 @@ namespace AutoMecanica
 
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
-            //..
-            //Meus Codigos
-            //
+            UC_UsersDados uC_UD = new UC_UsersDados();
+            addUserControl(uC_UD);
+            //Nao  alterar em baixo
             hideSubMenu();
         }
 
